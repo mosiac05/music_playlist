@@ -1,0 +1,21 @@
+plans
+	*name
+	*playlist_size
+	*has_many_musics
+
+user
+	*email
+	*password_hash
+	*has_one playlist
+
+playlists
+	*name
+	*belongs_to user
+
+musics
+	*name
+	*belongs_to plan
+
+playlist_musics
+	*playlist_id
+	*music_id	
